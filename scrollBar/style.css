@@ -1,0 +1,27 @@
+/* Needed Code */
+/* Body makes it so it only applies on main scrollbar */
+
+body::-webkit-scrollbar {
+    /* Width of the scroll bar area */
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+    /* Whole bar color */
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    /* Background color and edge circular */
+    background: #6649b8;
+    border-radius: 100vw;
+}
+
+/* Firefox Support */
+/* Not as customizable but make sure it is functional */
+@supports (scrollbar-color: #1e1e24 #6649b8) {
+    * {
+        scrollbar-color: #1e1e24 #6649b8;
+        scrollbar-width: thin;
+    }
+}
