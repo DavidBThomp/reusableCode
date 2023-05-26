@@ -1,0 +1,83 @@
+/* Universal Styling (May not need) */
+/* Non Responsive */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header li,
+header a,
+header button {
+    /* Styling Font */
+    color: black;
+    text-decoration: none;
+
+    /* Unneeded */
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    /* Links styling with transist */
+
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    color: #19cf16;
+}
+
+.nav-button {
+    /* Some basic button styling with transistion */
+    padding: 9px 25px;
+    background-color: #19cf16;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-button:hover {
+    background-color: rgba(25, 207, 22, 0.8);
+}
+
+.logoName {
+    /* Line up logo img and text */
+    display: inline-block;
+
+    /* Transisiton color on hover? */
+    transition: all 0.3s ease 0s;
+
+    /* Unneeded */
+    font-size: 1.25rem;
+}
+
+.logoName:hover {
+    color: #19cf16;
+}
